@@ -1,9 +1,12 @@
-﻿namespace ProductManager
+﻿using ProductManager.Controller;
+
+namespace ProductManager
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            ProdutoController controller = new ProdutoController();
             int opcao;
 
             Console.WriteLine("--- BEM VINDO(A) AO SISTEMA DE ESTOQUE! ---");
@@ -17,16 +20,16 @@
                 switch (opcao)
                 {
                     case 1:
-                        CadastrarProduto();
+                        controller.CadastrarProduto();
                         break;
                     case 2:
-                        RemoverId();
+                        controller.RemoverId();
                         break;
                     case 3:
-                        AtualizarProduto();
+                        controller.AtualizarProduto();
                         break;
                     case 4:
-                        ListarProdutos();
+                        controller.ListarProdutos();
                         break;
                     case 5:
                         Console.WriteLine("\nO programa foi encerrado!");

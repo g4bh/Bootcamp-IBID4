@@ -1,0 +1,15 @@
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\bin\Debug\net6.0\ProductManager.exe
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\bin\Debug\net6.0\ProductManager.deps.json
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\bin\Debug\net6.0\ProductManager.runtimeconfig.json
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\bin\Debug\net6.0\ProductManager.dll
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\bin\Debug\net6.0\ProductManager.pdb
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.csproj.AssemblyReference.cache
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.AssemblyInfoInputs.cache
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.AssemblyInfo.cs
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.csproj.CoreCompileInputs.cache
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.dll
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\refint\ProductManager.dll
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.pdb
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ProductManager.genruntimeconfig.cache
+C:\Users\nefad\OneDrive\Documentos\CSharp-Curso\ProductManager\ProductManager\obj\Debug\net6.0\ref\ProductManager.dll
