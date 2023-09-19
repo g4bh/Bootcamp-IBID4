@@ -34,7 +34,7 @@ namespace ProductManager.Entities
 
         public override string ToString()
         {
-            return $"\n{Id} - {NomeProduto} | Preço: R${PrecoProduto}";
+            return $"\nID: {Id} | Nome do produto: {NomeProduto} | Preço: R${PrecoProduto}";
         }
     }
 }
