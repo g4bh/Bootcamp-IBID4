@@ -11,23 +11,22 @@ namespace ProductManager.Controller
     internal class ProdutoController
     {
         private List<Produto> listaProdutos = new List<Produto>();
-
+        int id = 1000;
         public void CadastrarProduto()
         {
-            Console.Write("\nInforme o ID do produto: ");
-            int id = int.Parse(Console.ReadLine());
-
-            Console.Write("Informe o nome do produto: ");
+            Console.Write("\nInforme o NOME do produto: ");
             string nomeP = Console.ReadLine();
 
-            Console.Write("Informe o preço do produto: ");
-            float precoP = float.Parse(Console.ReadLine());
+            Console.Write("\nInforme o PREÇO do produto: ");
+            float precoP = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            id++; //Criando um novo ID a cada produto inserido 
 
             Produto novoP = new Produto(id, nomeP, precoP);
 
             listaProdutos.Add(novoP);
 
-            Console.Write("\nProduto inserido com sucesso!\n");
+            Console.Write("\nSUCESSO: Produto inserido com sucesso!\n");
         }
 
         public void RemoverId()
@@ -46,13 +45,13 @@ namespace ProductManager.Controller
                     continue;
                 }
                 listaProdutos.Remove(produto);
-                Console.WriteLine("\nAVISO: roduto foi excluído com sucesso!\n");
+                Console.WriteLine("\nSUCESSO: produto foi excluído com sucesso!\n");
                 contador++;
             }
 
             if (contador == 0)
             {
-                Console.WriteLine("AVISO: Não há produtos com esse ID ou não há produtos cadastrados! Tente novamente!");
+                Console.WriteLine("AVISO: Não há produtos com esse ID ou não há produtos cadastrados!\n Tente novamente!\n");
             }
         }
 
@@ -78,7 +77,7 @@ namespace ProductManager.Controller
 
                         produto.SetNome(novoNome);
 
-                        Console.Write("\nProduto atualizado com sucesso!");
+                        Console.Write("\nSUCESSO: Produto atualizado com sucesso!");
                     }
 
                 }
@@ -88,10 +87,12 @@ namespace ProductManager.Controller
 
         public void ListarProdutos()
         {
-            Console.WriteLine("\n--- Lista de produtos ---");
+            Console.WriteLine("\n------------------------------\n");
+            Console.WriteLine("==== LISTA DE PRODUTOS ===\n");
+            
             if (listaProdutos.Count == 0)
             {
-                Console.WriteLine("Não há nenhum produto inserido!\n");
+                Console.WriteLine("AVISO: Não há nenhum produto inserido!\n");
             }
             else
             {
@@ -101,6 +102,7 @@ namespace ProductManager.Controller
                 }
             }
 
+            Console.WriteLine("\n------------------------------\n");
         }
     }
 }
