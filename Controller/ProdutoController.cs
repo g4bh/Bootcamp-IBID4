@@ -31,35 +31,38 @@ namespace ProductManager.Controller
 
         public void RemoverId()
         {
-
-            Console.Write("Informe o ID do produto que deseja excluir: ");
-            int Id = int.Parse(Console.ReadLine());
-
-            int contador = 0;
-
-            for (int i = 0; i < listaProdutos.Count; i++)
+            if (listaProdutos.Count == 0)
             {
-                Produto produto = listaProdutos[i];
-                if (produto.GetId() != Id)
+                Console.WriteLine("\nAVISO: Não há produtos para excluir!");
+            }
+            else
+            {
+                Console.Write("\nInforme o ID do produto que deseja excluir: ");
+                int Id = int.Parse(Console.ReadLine());
+
+                int contador = 0;
+
+                for (int i = 0; i < listaProdutos.Count; i++)
                 {
-                    continue;
+                    Produto produto = listaProdutos[i];
+                    if (produto.GetId() != Id)
+                    {
+                        continue;
+                    }
+                    listaProdutos.Remove(produto);
+                    Console.WriteLine("\nSUCESSO: produto foi excluído com sucesso!\n");
+                    contador++;
                 }
-                listaProdutos.Remove(produto);
-                Console.WriteLine("\nSUCESSO: produto foi excluído com sucesso!\n");
-                contador++;
+                if (contador == 0)
+                {
+                    Console.WriteLine("\nAVISO: Não há produtos com esse ID!\nTente novamente!\n");
+                }
             }
-
-            if (contador == 0)
-            {
-                Console.WriteLine("AVISO: Não há produtos com esse ID ou não há produtos cadastrados!\n Tente novamente!\n");
-            }
+            
         }
 
         public void AtualizarProduto()
         {
-
-            Console.Write("\nInforme o ID do produto que queira atualizar:");
-            int Id = int.Parse(Console.ReadLine());
 
             if (listaProdutos.Count == 0)
             {
@@ -67,17 +70,20 @@ namespace ProductManager.Controller
             }
             else
             {
+                Console.Write("\nInforme o ID do produto que queira atualizar: ");
+                int Id = int.Parse(Console.ReadLine());
+
                 foreach (Produto produto in listaProdutos)
                 {
                     if (produto.GetId() == Id)
                     {
 
-                        Console.Write("\nInforme o novo nome do produto: ");
+                        Console.Write("\nInforme o NOVO NOME do produto: ");
                         string novoNome = Console.ReadLine();
 
                         produto.SetNome(novoNome);
 
-                        Console.Write("\nSUCESSO: Produto atualizado com sucesso!");
+                        Console.Write("\nSUCESSO: Produto atualizado com sucesso!\n");
                     }
 
                 }
